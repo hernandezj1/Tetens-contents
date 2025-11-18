@@ -2,24 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>TEI Chapter Viewer</title>
-<style>
-    body { font-family: sans-serif; padding: 12px; }
-    #content { 
-        border: 1px solid #ccc; 
-        padding: 15px; 
-        margin-top: 10px; 
-        min-height: 400px; 
-        overflow-y: auto;
-    }
-    select { padding: 5px; font-size: 1em; }
-</style>
+<title>Chapter Viewer</title>
 </head>
 <body>
 
-<h1>Chapter Viewer</h1>
-
-<label for="chapterSelector">Select chapter:</label>
+<!-- Dropdown to select chapter -->
 <select id="chapterSelector">
     <option value="">-- choose chapter --</option>
     <option value="TableofContents.html">Table of Contents</option>
@@ -37,30 +24,24 @@
     <option value="ChapterXI.html">Chapter XI</option>
 </select>
 
-<div id="content">Select a chapter to view...</div>
+<!-- Iframe to display selected chapter -->
+<iframe id="chapterFrame" src="" style="width:100%; height:calc(100vh - 40px); border:none;"></iframe>
 
 <script>
 const selector = document.getElementById("chapterSelector");
-const contentDiv = document.getElementById("content");
+const iframe = document.getElementById("chapterFrame");
 
-selector.addEventListener("change", async (e) => {
+selector.addEventListener("change", (e) => {
     const filename = e.target.value;
-    if (!filename) {
-        contentDiv.innerHTML = "Select a chapter to view...";
-        return;
-    }
-
-    try {
-        const response = await fetch(`chapter_files/${filename}`);
-        if (!response.ok) throw new Error(`HTTP error ${response.status}`);
-        const html = await response.text();
-        contentDiv.innerHTML = html;
-    } catch (err) {
-        contentDiv.innerHTML = `<b>Error loading file:</b><br>${err}`;
+    if (filename) {
+        iframe.src = `chapter_files/${filename}`;
+    } else {
+        iframe.src = "";
     }
 });
 </script>
 
 </body>
 </html>
+
 
