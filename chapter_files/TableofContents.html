@@ -1,0 +1,441 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Philosophische Versuche: a digital edition</title>
+      <style>
+                    body {
+                            display: flex;
+                            margin: 0;
+                        }
+
+                        #text {
+                            width: 50%;
+                            height: 100vh;
+                            overflow-y: auto;
+                            scroll-padding-top: 0;
+                        }
+
+                        .page {
+                            scroll-snap-align: start;
+                            height: 100vh;
+                            box-sizing: border-box;
+                            border-top: 1px dashed #aaa;
+                            padding: 2em;     
+                        }
+
+                        #pdf {
+                            width: 50%;
+                            height: 100vh;
+                            border: none;
+                        }
+                    
+                        .with-note {
+                            border-bottom: 1px dotted #666;
+                            cursor: help;
+                        }
+                    
+                        .hidden-word {
+                            position: absolute;
+                            height: 0;
+                            width: 0;
+                            overflow: hidden;
+                            white-space: nowrap;
+                        }
+
+                </style>
+   </head>
+   <body>
+      <div id="text">
+         <div class="page" data-page="1"></div>
+         <p><br>[XXXVII]<br><br><br>Inhalt<br>des ersten Bandes.</p>
+         <p><br>Erster Versuch.</p>
+         <p><br>Ueber die Natur der Vorstellungen.</p>
+         <p><br>I.</p>
+         <p><br>Vorläufige Anzeige von den Bemühungen der Philoso-<span class="hidden-word">Vorläufige Anzeige von den Bemühungen der Philosophen,</span><br>phen, Vorstellungen, Empfindungen und Gedan-<span class="hidden-word">Vorläufige Anzeige von den Bemühungen der Philosoken</span><br>ken aus Einer Grundkraft abzuleiten S. 1</p>
+         <p><br>II.</p>
+         <p><br>Was Vorstellungen in dem Wolfischen System sind 8</p>
+         <p><br>III.</p>
+         <p><br>Eine Reihe von Beobachtungen und Erfahrungssätzen,<br>betreffend die Natur der Vorstellungen 12</p>
+         <p><br>IV.</p>
+         <p><br>Weitere Erläuterung des ersten Charakters der Vorstel-<span class="hidden-word">Weitere Erläuterung des ersten Charakters der Vorstellungen,</span><br>lungen, daß sie zurückgebliebene Spuren vorherge.<span class="hidden-word">Weitere Erläuterung des ersten Charakters der Vorstelgangener</span><br>gangener Veränderungen sind. Ob dieß bey allen<span class="hidden-word">Weitere Erläuterung des ersten Charakters der VorstelArten</span><br>Arten von Vorstellungen sich so verhalte</p>
+         <p><br>V.</p>
+         <p><br>Von den Gesichtsvorstellungen. Entstehungsart der-<span class="hidden-word">Von den Gesichtsvorstellungen. Entstehungsart derselben.</span><br>selben. Unterschied zwischen Empfindung und Nach-<span class="hidden-word">Von den Gesichtsvorstellungen. Entstehungsart derempfindung.</span><br>empfindung. Einbildung, oder Wiedervorstellung 31</p>
+         <p><br>VI.</p>
+         <p><br>Dieselbige Beschaffenheit der Vorstellungen in den Em-<span class="hidden-word">Dieselbige Beschaffenheit der Vorstellungen in den Empfindungsvorstellungen</span><br>pfindungsvorstellungen des Gehörs und der übrigen<span class="hidden-word">Dieselbige Beschaffenheit der Vorstellungen in den Emäußern</span><br>äußern Sinne 40</p>
+         <p><br>VII.</p>
+         <p><br>Die Vorstellungen des innern Sinns haben dasselbige<br>Unterscheidungsmerkmal der Vorstellungen. Beweis<br>davon aus Beobachtungen 45</p>
+         <p><br>VIII.</p>
+         <p><br></p>
+         <div class="page" data-page="2"></div>
+         <p><br><br>[XXXVIII] Inhalt</p>
+         <p><br>VIII.</p>
+         <p><br>Dunkelheit bey den Vorstellungen aus dem innern Sinn.<br>Ob die Empfindungen des innern Sinns ihre eigene<br>Spuren hinterlassen, die sich eben so auf sie beziehen,<br>wie die Vorstellungen aus dem äußern Sinn auf ihre<br>Empfindungen? Einwurf dagegen aus der Ideen-<br>association und Beantwortung desselben S. 57</p>
+         <p><br>IX.</p>
+         <p><br>Noch eine Vergleichung der Wiedervorstellungen der letz-<span class="hidden-word">Noch eine Vergleichung der Wiedervorstellungen der letztern</span><br>tern Art mit denen von der erstern Art in Hinsicht ih-<span class="hidden-word">Noch eine Vergleichung der Wiedervorstellungen der letzrer</span><br>rer Deutlichkeit 73</p>
+         <p><br>X.</p>
+         <p><br>Ueber die zwote wesentliche Beschaffenheit der Vorstellun-<span class="hidden-word">Ueber die zwote wesentliche Beschaffenheit der Vorstellungen,</span><br>gen, die ihnen als Zeichen von Gegenständen zukommt.<span class="hidden-word">Ueber die zwote wesentliche Beschaffenheit der VorstellunSie</span><br>Sie weisen die Reflexion auf ihre Objekte hin. Ur-<span class="hidden-word">Ueber die zwote wesentliche Beschaffenheit der Vorstellunsache</span><br>sache davon 75</p>
+         <p><br>XI.</p>
+         <p><br>Eine Anmerkung über den Unterschied der analogischen<br>und anschaulichen Vorstellungen 87</p>
+         <p><br>XII.</p>
+         <p><br>Von der bildlichen Klarheit in den Vorstellungen. Sie<br>kann von der ideellen, das ist, von der Klarheit in<br>den Ideen unterschieden werden. Wie ferne beide<br>sich auf einander und auf die bezeichnende Natur der<br>Vorstellungen beziehen. Kritik über die gewöhnliche<br>Abtheilung der Ideen in dunkle, klare, verwirrte,<br>deutliche 95</p>
+         <p><br>XIII.</p>
+         <p><br>Verschiedene Thätigkeiten und Vermögen der vorstellen-<span class="hidden-word">Verschiedene Thätigkeiten und Vermögen der vorstellenden</span><br>den Kraft. Das Vermögen der Perception, die<span class="hidden-word">Verschiedene Thätigkeiten und Vermögen der vorstellenPhantasie,</span><br>Phantasie, und die Dichtkraft 104</p>
+         <p><br>XIV.</p>
+         <p><br>Ueber das Gesetz der Ideenassociation. Dessen wah-<span class="hidden-word">Ueber das Gesetz der Ideenassociation. Dessen wahrer</span><br>rer Sinn. Ist nur ein Gesetz der Phantasie bey</p>
+         <p><br></p>
+         <div class="page" data-page="3"></div>
+         <p></p>
+         <p><br><br>des ersten Bandes. [XXXIX]</p>
+         <p><br>der Reproduktion der Vorstellungen; ist kein Gesetz<br>der Verbindung der Ideen zu neuen Reihen S. 108</p>
+         <p><br>XV.</p>
+         <p><br>Von der bildenden Dichtkraft. 1) Der Begriff davon 115</p>
+         <p><br>2) Ob ihre Wirksamkeit auf ein Zertheilen und Wie-<span class="hidden-word">2) Ob ihre Wirksamkeit auf ein Zertheilen und Wiederzusammensetzen</span><br>derzusammensetzen der Vorstellungen eingeschrän-<span class="hidden-word">2) Ob ihre Wirksamkeit auf ein Zertheilen und Wieket</span><br>ket sey? 116</p>
+         <p><br>3) Sie macht neue sinnlich einfache Vorstellungen 119</p>
+         <p><br>4) Gränzen dieser Schöpferkraft 126</p>
+         <p><br>5) Gränzen des Vermögens, Vorstellungen aufzu-<span class="hidden-word">5) Gränzen des Vermögens, Vorstellungen aufzulösen</span><br>lösen 127</p>
+         <p><br>6) Ueber die allgemeinen sinnlichen Vorstellungen<br>128</p>
+         <p><br>7) Gesetze der Dichtkraft, wenn sie neue einfache Vor-<span class="hidden-word">7) Gesetze der Dichtkraft, wenn sie neue einfache Vorstellungen</span><br>stellungen bildet 136</p>
+         <p><br>8) Folgen, die aus der Wirkungsart der Dichtkraft<br>fließen, in Hinsicht des Ursprungs der Vorstel-<br>lungen aus Empfindungen 138</p>
+         <p><br>9) Einfluß der Dichtkraft auf die Ordnung, in der<br>die Reproduktiones der Phantasie erfolgen 139</p>
+         <p><br>10) Die Wirksamkeit der Dichtkraft erstrecket sich auf<br>alle Arten von Vorstellungen 140</p>
+         <p><br>XVI.</p>
+         <p><br>Ueber die Gleichartigkeit und Verschiedenartigkeit der<br>Vermögen, die zur vorstellenden Kraft gehören 142</p>
+         <p><br>1) Bestimmung der zu untersuchenden Frage 142</p>
+         <p><br>2) Eine nöthige Nebenbetrachtung über die Begriffe<br>von Einartigkeit und Verschiedenartigkeit 143</p>
+         <p><br>3) Verschiedene Stufen der Einartigkeit 152</p>
+         <p><br>4) Anwendung dieser Begriffe auf die Vermögen, die<br>zur vorstellenden Kraft gehören. In wie weit das<br>Vermögen, Vorstellungen aufzunehmen, und das<br>Vermögen, Vorstellungen zu reproduciren, einer-<br>leyartige Vermögen sind 154</p>
+         <p><br>5) Das Verhältniß der Phantasie zu der Dichtkraft 159</p>
+         <p><br>6) Das</p>
+         <p><br></p>
+         <div class="page" data-page="4"></div>
+         <p><br>[XL] Inhalt</p>
+         <p><br>6) Das Vermögen, Nachempfindungen zu haben,<br>und Vorstellungen aufzunehmen, hängt ab von<br>der Modifikabilität der Seele, und von der Selbst-<br>thätigkeit, mit der sie ihre Modifikationen in der<br>Empfindung aufnimmt S. 161</p>
+         <p><br>7) Eine allgemeine Anmerkung über die Entwickelung<br>des Princips der Vorstellungsthätigkeiten 163</p>
+         <p><br>Zweeter Versuch.</p>
+         <p><br>Ueber das Gefühl, über Empfindungen und<br>Empfindnisse 166</p>
+         <p><br>I.</p>
+         <p><br>Bestimmung dessen, was hier Fühlen, Empfinden, Ge-<span class="hidden-word">Bestimmung dessen, was hier Fühlen, Empfinden, Gefühl,</span><br>fühl, Empfindung und Empfindniß genennet wird 166</p>
+         <p><br>II.</p>
+         <p><br>Einige Beobachtungen über das Gefühl.<br>1) Das Gefühl hat nur mit gegenwärtigen Dingen<br>zu thun 170</p>
+         <p><br>2) Das Gefühl ist verschiedener Grade fähig. In<br>wie ferne es erwiesen werden kann, daß es ein<br>dunkles Gefühl gebe 172</p>
+         <p><br>3) Was gefühlet wird, ist eine passive Modifikation<br>der Seele 173</p>
+         <p><br>4) Was Thun und Leiden, Aktion und Passion<br>sey 174</p>
+         <p><br>5) Auf welche Art wir unsere Thätigkeiten fühlen 178</p>
+         <p><br>III.</p>
+         <p><br>Von dem Gefühl der Verhältnisse und Beziehungem<br>1) Ueberhaupt 182</p>
+         <p><br>2) Von dem Gefühl der Verhältnisse und Beziehun-<span class="hidden-word">2) Von dem Gefühl der Verhältnisse und Beziehungen</span><br>gen der Gegenstände unter sich. 183</p>
+         <p><br>3) Von dem Gefühl der Beziehungen der Dinge auf<br>die gegenwärtige Beschaffenheit der Seele 184</p>
+         <p><br>4) Von</p>
+         <p><br>des ersten Bandes. [XLI] </p>
+         <p><br>4) Von den Empfindungen des Wahren, des Schö-<span class="hidden-word">4) Von den Empfindungen des Wahren, des Schönen</span><br>nen und Guten S. 185</p>
+         <p><br>IV.</p>
+         <p><br>Das Absolute und nicht das Relative ist ein unmittel-<span class="hidden-word">Das Absolute und nicht das Relative ist ein unmittelbarer</span><br>barer Gegenstand des Gefühls. 191</p>
+         <p><br>1) Der Satz selbst 191</p>
+         <p><br>2) Beweis des Satzes aus dem Gefühl der objektivi-<span class="hidden-word">2) Beweis des Satzes aus dem Gefühl der objektivischen</span><br>schen Verhältnisse der Dinge. Gefühl des Ueber-<span class="hidden-word">2) Beweis des Satzes aus dem Gefühl der objektivigangs.</span><br>gangs. Gefühl der Einerleyheit und der Verschie-<span class="hidden-word">2) Beweis des Satzes aus dem Gefühl der objektividenheit.</span><br>denheit. Gefühl der Dependenz 194</p>
+         <p><br>3) Beweis aus dem Gefühl der Wahrheit 202</p>
+         <p><br>4) Beweis aus den Empfindnissen 205</p>
+         <p><br>V.</p>
+         <p><br>Von der Beziehung der Empfindnisse auf die Empfin-<span class="hidden-word">Von der Beziehung der Empfindnisse auf die Empfindungen.</span><br>dungen.</p>
+         <p><br>1) Das Afficirende ist eine Beschaffenheit der affi-<span class="hidden-word">1) Das Afficirende ist eine Beschaffenheit der afficirenden</span><br>cirenden Empfindungen 210</p>
+         <p><br>2) Ob und wie das Afficirende von den afficirenden<br>Empfindungen getrennet werden könne? 217</p>
+         <p><br>VI.</p>
+         <p><br>Weitere Betrachtung über die Natur der Empfindnisse.<br>1) Unterschied zwischen afficirenden Empfindungen,<br>und afficirenden Vorstellungen 220</p>
+         <p><br>2) Von ursprünglich und für sich afficirenden Em-<span class="hidden-word">2) Von ursprünglich und für sich afficirenden Empfindungen.</span><br>pfindungen. Von der Ueberleitung des Gefal-<span class="hidden-word">2) Von ursprünglich und für sich afficirenden Emlens</span><br>lens und Mißfallens von einer Sache auf eine an-<span class="hidden-word">2) Von ursprünglich und für sich afficirenden Emdere</span><br>dere 222</p>
+         <p><br>3) Prüfung des Systems von dem Ursprung aller<br>Empfindnisse aus äußern Empfindungen. Kenn-<br>zeichen der ursprünglich für sich afficirenden Em-<br>pfindungen, die solches weder durch eine Ueber-<br>tragung sind, noch durch die Ideenassoiation 226</p>
+         <p><br>4) Die Untersuchung über die ursprünglichen Em-<span class="hidden-word">4) Die Untersuchung über die ursprünglichen Empfindnisse</span><br>pfindnisse wird fortgesetzt. In welcher Ordnung<span class="hidden-word">4) Die Untersuchung über die ursprünglichen Emdie</span><br>die natürliche Empfindsamkeit sich offenbaret 238</p>
+         <p><br>VII.</p>
+         <p><br></p>
+         <div class="page" data-page="5"></div>
+         <p><br>[XLII] Inhalt</p>
+         <p><br>VII.</p>
+         <p><br>Von der afficirenden Kraft der Vorstellungen.</p>
+         <p><br>1) Sie hat ihren Ursprung aus der afficirenden Kraft<br>der Empfindungen, aus denen die Vorstellungen<br>entstehen S. 244</p>
+         <p><br>2) Die Empfindnisse aus Phantasmen sind selbst<br>Wiedervorstellungen afficirender Empfindungen<br>247</p>
+         <p><br>3) Große Macht der Vorstellungen 247</p>
+         <p><br>4) Ursache dieser Stärke 249</p>
+         <p><br>5) Wie unangenehme Empfindungen in der Vorstel-<span class="hidden-word">5) Wie unangenehme Empfindungen in der Vorstellung</span><br>lung angenehm seyn können, und umgekehrt. Von<span class="hidden-word">5) Wie unangenehme Empfindungen in der Vorsteldem</span><br>dem Vergnügen, das in den Vorstellungen als<span class="hidden-word">5) Wie unangenehme Empfindungen in der VorstelVorstellungen</span><br>Vorstellungen seinen Grund hat 251</p>
+         <p><br>VIII.</p>
+         <p><br>In dem Aktus des Fühlens nimmt man keine Mannig-<span class="hidden-word">In dem Aktus des Fühlens nimmt man keine Mannigfaltigkeit</span><br>faltigkeit gewahr. Ob Fühlen als eine Reaktion der<span class="hidden-word">In dem Aktus des Fühlens nimmt man keine MannigSeele</span><br>Seele könne angesehen werden? 255</p>
+         <p><br>Dritter Versuch.</p>
+         <p><br>Ueber das Gewahrnehmen und Bewußtseyn.</p>
+         <p><br>I.</p>
+         <p><br>Bestimmter Begriff von dem Gewahrnehmen und dem<br>Bewußtseyn 262</p>
+         <p><br>II.</p>
+         <p><br>Ob das Gewahrnehmen einerley sey mit dem Aktus des<br>Fühlens in einer größern Intension? oder ob es ei-<br>nerley sey mit dem Aktus des Vorstellens, wenn die-<br>ser sich ausnehmend bey einer Vorstellung äußert? 263</p>
+         <p><br>III.</p>
+         <p><br>Das Gewahrnehmen bringet Gedanken von Verhält-<span class="hidden-word">Das Gewahrnehmen bringet Gedanken von Verhältnissen</span><br>nissen hervor. Vergleichung der Verhältnißgedanken<span class="hidden-word">Das Gewahrnehmen bringet Gedanken von Verhältmit</span><br>mit dem Gefühl des Absoluten 273</p>
+         <p><br></p>
+         <div class="page" data-page="6"></div>
+         <p></p>
+         <p><br>des ersten Bandes. [XLIII]</p>
+         <p><br>IV.</p>
+         <p><br>Wie das Gewahrnehmen entstehe?</p>
+         <p><br>1) Es setzet eine sich ausnehmende Empfindung oder<br>Vorstellung von der gewahrgenommenen Sache<br>voraus S. 281</p>
+         <p><br>2) Es erfodert eine Zurückbeugung der empfindenden<br>und vorstellenden Kraft auf die gewahrgenommene<br>Sache 283</p>
+         <p><br>V.</p>
+         <p><br>Ob das Gewahrnehmen etwas Passives in der Seele<br>sey? 285</p>
+         <p><br>VI.</p>
+         <p><br>Ob das Gewahrnehmen einerley sey mit dem Gefühl der<br>Verhältnisse? 291</p>
+         <p><br>Vierter Versuch.</p>
+         <p><br>Ueber die Denkkraft und über das Denken.<br>I.</p>
+         <p><br>Wie die Untersuchung dieses Seelenvermögens anzustellen<br>sey? 295</p>
+         <p><br>II.</p>
+         <p><br>Die Denkkraft in Verbindung mit der Vorstellungskraft<br>und mit dem Gefühl macht das ganze Erkenntnißver-<br>mögen aus 298</p>
+         <p><br>III.</p>
+         <p><br>Ursprung der Verhältnißbegriffe.</p>
+         <p><br>1) Von den ersten ursprünglichen Verhältnißge-<span class="hidden-word">1) Von den ersten ursprünglichen Verhältnißgedanken</span><br>danken 301</p>
+         <p><br>2) Von den Verhältnißideen und Verhältnißbe-<span class="hidden-word">2) Von den Verhältnißideen und Verhältnißbegriffen</span><br>griffen 307</p>
+         <p><br>IV.</p>
+         <p><br>Von dem Begriff der ursachlichen Verbindung.<br>1) Die Humische Erklärung von diesem Begriff 312</p>
+         <p><br>2) Prüfung dieser Erklärung. Der Begriff von der<br>ursachlichen Verbindung stellet mehr vor, als eine</p>
+         <p><br></p>
+         <div class="page" data-page="7"></div>
+         <p></p>
+         <p><br>[XLIV] Inhalt</p>
+         <p><br>bloße Verbindung; er enthält auch die Idee von<br>Abhängigkeit des Einen von dem andern 316</p>
+         <p><br>3) Die Idee von Abhängigkeit, die mehr ist, als bloße<br>Verbindung, schreibt sich aus den ersten ursachli-<br>chen Beziehungen her, und aus den Empfindun-<br>gen dieser beziehenden Aktionen 318</p>
+         <p><br>4) Was das Begreifen des Einen aus dem andern,<br>was Folgern und Schließen sey? 322</p>
+         <p><br>5) Bestimmung des Ursprungs des Begriffs von der<br>ursachlichen Verbindung. Die Art, wie dieser<br>Begriff angewendet wird 323</p>
+         <p><br>V.</p>
+         <p><br>Von der Verschiedenheit der Verhältnisse und der allge-<span class="hidden-word">Von der Verschiedenheit der Verhältnisse und der allgemeinen</span><br>meinen Verhältnißbegriffe.</p>
+         <p><br>1) Nicht alle Verhältnisse können auf Identität und<br>Diversität zurückgebracht werden 328</p>
+         <p><br>2) Klassen der allgemeinen einfachen Verhältnisse 330</p>
+         <p><br>VI.</p>
+         <p><br>Nähere Untersuchung über den Ursprung unsrer Ideen aus<br>Empfindungen.</p>
+         <p><br>1) Die Empfindungen geben den Stoff her zu allen<br>Ideen 336</p>
+         <p><br>2) Insbesondere auch zu den Verhältnißbegriffen 337</p>
+         <p><br>3) Die Form der Idee hängt von der Denkkraft ab 340</p>
+         <p><br>VII.</p>
+         <p><br>Vergleichung der verschiedenen Aeußerungen der Denk-<span class="hidden-word">Vergleichung der verschiedenen Aeußerungen der Denkkraft</span><br>kraft unter sich.</p>
+         <p><br>1) Wie die verschiedenen Aeußerungen der Denkkraft,<br>das Unterscheiden, das Gewahrnehmen, das<br>Beziehen der Dinge auf einander, das Erkennen,<br>sich gegen einander verhalten 346</p>
+         <p><br>2) Die einfachen Denkthätigkeiten, in welche die Aeus-<span class="hidden-word">2) Die einfachen Denkthätigkeiten, in welche die Aeusserungen</span><br>serungen der Denkkraft bey dem Gewahrnehmen<span class="hidden-word">2) Die einfachen Denkthätigkeiten, in welche die Aeusaufgelöset</span><br>aufgelöset werden können 348</p>
+         <p><br></p>
+         <div class="page" data-page="8"></div>
+         <p></p>
+         <p><br>des ersten Bandes. [XLV]</p>
+         <p><br>3) Die einfachen Denkthätigkeiten in den übrigen Ver-<span class="hidden-word">3) Die einfachen Denkthätigkeiten in den übrigen Verhältnißgedanken</span><br>hältnißgedanken bestehen in Beziehung und Ge-<span class="hidden-word">3) Die einfachen Denkthätigkeiten in den übrigen Verwahrnehmung</span><br>wahrnehmung S. 353</p>
+         <p><br>4) Gewahrnehmung der Beziehungen, ohne Ge-<span class="hidden-word">4) Gewahrnehmung der Beziehungen, ohne Gewahrnehmung</span><br>wahrnehmung der sich auf einander beziehenden<span class="hidden-word">4) Gewahrnehmung der Beziehungen, ohne GeGegenstände.</span><br>Gegenstände. Ideen von Raum und Zeit 357</p>
+         <p><br>5) In wie ferne alle Ideen durch die Vergleichung<br>gemacht werden 361</p>
+         <p><br>6) Von der Form der Urtheile. In wie ferne sie<br>in Vergleichungen bestehen 365</p>
+         <p><br>7) Vom Folgern und Schließen 369</p>
+         <p><br>Fünfter Versuch.</p>
+         <p><br>Ueber den Ursprung unserer Kenntnisse von der<br>objektivischen Existenz der Dinge.</p>
+         <p><br>I.</p>
+         <p><br>Ob die Kenntnisse von dem Daseyn der äußern Gegen-<span class="hidden-word">Ob die Kenntnisse von dem Daseyn der äußern Gegenstände</span><br>stände als instinktartige Urtheile der Denkkraft ange-<span class="hidden-word">Ob die Kenntnisse von dem Daseyn der äußern Gegensehen</span><br>sehen werden können? 373</p>
+         <p><br>II.</p>
+         <p><br>Ob der Mensch bey dem natürlichen Gang der Reflexion<br>vorher ein Egoist seyn müsse, ehe er es wissen kann,<br>daß es Dinge außer ihm gebe? 377</p>
+         <p><br>III.</p>
+         <p><br>Welche Entwickelung der Gedanken erfodert werde, um<br>zur Unterscheidung der subjektivischen und objektivi-<br>schen Existenz der Dinge zu gelangen 380</p>
+         <p><br>IV.</p>
+         <p><br>Wie zuerst die Sonderung der Empfindungen in ver-<span class="hidden-word">Wie zuerst die Sonderung der Empfindungen in verschiedene</span><br>schiedene Theile und Haufen vor sich gehe? 384</p>
+         <p><br>V.</p>
+         <p><br>Von dem Ursprung der Grundbegriffe des Verstandes,<br>die zu den Urtheilen über die Existenz der Dinge erfo-<br>dert werden. Begriffe von einem Subjekt und von</p>
+         <p><br></p>
+         <div class="page" data-page="9"></div>
+         <p></p>
+         <p><br>[XLVI] Inhalt</p>
+         <p><br>Beschaffenheiten. Begriff von unserm Ich, als ei-<span class="hidden-word">Beschaffenheiten. Begriff von unserm Ich, als einem</span><br>nem Dinge S. 388</p>
+         <p><br>VI.</p>
+         <p><br>Fortsetzung des Vorhergehenden. Von den Gemeinbe-<span class="hidden-word">Fortsetzung des Vorhergehenden. Von den Gemeinbegriffen</span><br>griffen von einem Objekt, von der Wirklichkeit, und<span class="hidden-word">Fortsetzung des Vorhergehenden. Von den Gemeinbevon</span><br>von der Substanz 395</p>
+         <p><br>VII.</p>
+         <p><br>Eine Anmerkung gegen die Idealisten aus dem Ursprung<br>unserer Urtheile über die äußere Wirklichkeit der Dinge.<br>Aus welchen Empfindungen die Idee von der äußern<br>Existenz zunächst entstanden sey? 401</p>
+         <p><br>VIII.</p>
+         <p><br>In welcher Ordnung die Gedanken von unserer eigenen<br>Existenz und von der Existenz äußerer Dinge ent-<br>stehen 411</p>
+         <p><br>IX.</p>
+         <p><br>Wie wir die Theile unsers Körpers als besondere Dinge<br>kennen gelernet 415</p>
+         <p><br>X.</p>
+         <p><br>Grundregel, wonach wir über die subjektivische und ob-<span class="hidden-word">Grundregel, wonach wir über die subjektivische und objektivische</span><br>jektivische Existenz der Dinge urtheilen 415</p>
+         <p><br>XI.</p>
+         <p><br>Anwendung dieser Grundregel zur Erklärung der beson-<span class="hidden-word">Anwendung dieser Grundregel zur Erklärung der besondern</span><br>dern Urtheile 416</p>
+         <p><br>XII.</p>
+         <p><br>Wie daraus der Unterschied zwischen qualitatibus prima-<span class="hidden-word">Wie daraus der Unterschied zwischen qualitatibus primariis</span><br>riis und secundariis zu begreifen sey 422</p>
+         <p><br>Sechster Versuch.</p>
+         <p><br>Ueber den Unterschied der sinnlichen Kenntniße<br>und der vernünstigen.</p>
+         <p><br>I.</p>
+         <p><br>Von der sinnlichen Erkenntniß und den dabey wirksamen<br>Denkungsvermögen.</p>
+         <p><br></p>
+         <div class="page" data-page="10"></div>
+         <p></p>
+         <p><br>des ersten Bandes [XLVII].</p>
+         <p><br>1) Unterschied der sinnlichen Erkenntniß und der ver-<span class="hidden-word">1) Unterschied der sinnlichen Erkenntniß und der vernünftigen</span><br>nünftigen S. 426</p>
+         <p><br>2) Erste Art der sinnlichen Kenntnisse. Reine Er-<span class="hidden-word">2) Erste Art der sinnlichen Kenntnisse. Reine Erfahrungen.</span><br>fahrungen. Reine Empfindungsideen. Unmit-<span class="hidden-word">2) Erste Art der sinnlichen Kenntnisse. Reine Ertelbare</span><br>telbare Empfindungsurtheile 429</p>
+         <p><br>3) Schwierigkeiten bey einigen unmittelbaren Em-<span class="hidden-word">3) Schwierigkeiten bey einigen unmittelbaren Empfindungsurtheilen,</span><br>pfindungsurtheilen, die man für mittelbare an-<span class="hidden-word">3) Schwierigkeiten bey einigen unmittelbaren Emzusehen</span><br>zusehen pflegt. Sinnliche Urtheile über die sicht-<span class="hidden-word">3) Schwierigkeiten bey einigen unmittelbaren Emlichen</span><br>lichen Größen der Objekte 431</p>
+         <p><br>4) Zwote Art der sinnlichen Urtheile 450</p>
+         <p><br>5) Nähere Betrachtung des sinnlichen Urtheils. Ent-<span class="hidden-word">5) Nähere Betrachtung des sinnlichen Urtheils. Entstehungsart</span><br>stehungsart desselben 450</p>
+         <p><br>II.</p>
+         <p><br>Von der Natur der höhern vernünftigen Kenntnisse.</p>
+         <p><br>1) Die höhere Vernunftkenntniß erfodert allgemeine<br>Begriffe. Wie diese in der Phantasie vermittelst<br>der Wörter bestehen 460</p>
+         <p><br>2) Ursprung der Gemeinsätze der Vernunft. Ob sie<br>allgemeine Erfahrungssätze sind? 462</p>
+         <p><br>3) Gründe gegen diese Meinung 466</p>
+         <p><br>Siebenter Versuch.</p>
+         <p><br>Von der Nothwendigkeit der allgemeinen Ver-<span class="hidden-word">Von der Nothwendigkeit der allgemeinen Vernunftwahrheiten,</span><br>nunftwahrheiten, deren Natur und Grün-<span class="hidden-word">Von der Nothwendigkeit der allgemeinen Verden.</span><br>den.</p>
+         <p><br>I.</p>
+         <p><br>Von der subjektivischen Nothwendigkeit der Gewahr-<span class="hidden-word">Von der subjektivischen Nothwendigkeit der Gewahrnehmungen,</span><br>nehmungen, der Urtheile und der Schlüsse überhaupt.</p>
+         <p><br>1) Die hier vorkommenden Fragen. Von der Ord-<span class="hidden-word">1) Die hier vorkommenden Fragen. Von der Ordnung,</span><br>nung, in welcher die Aktus des Gefühls, der vor-<span class="hidden-word">1) Die hier vorkommenden Fragen. Von der Ordstellenden</span><br>stellenden Kraft und der Denkkraft auf einander<span class="hidden-word">1) Die hier vorkommenden Fragen. Von der Ordfolgen?</span><br>folgen? 470</p>
+         <p><br>2) Von der subjektivischen Nothwendigkeit der Ur-<span class="hidden-word">2) Von der subjektivischen Nothwendigkeit der Urtheile,</span><br>theile, oder Verhältnißgedanken überhaupt. In</p>
+         <p><br></p>
+         <div class="page" data-page="11"></div>
+         <p></p>
+         <p><br>[XLVIII] Inhalt</p>
+         <p><br>wie ferne die Denkthätigkeit nothwendig erfolget,<br>wenn die vorher erfoderte Aktus des Gefühls und<br>der vorstellenden Kraft vorhanden sind? S. 475</p>
+         <p><br>3) In wie ferne dieß bey den dunkeln Reflexionen<br>Statt findet, ingleichen bey den ersten ursprüng-<br>lichen sinnlichen Urtheilen des gemeinen Verstan-<br>des. Wie der Idealismus und der Skepticismus<br>möglich sey 475</p>
+         <p><br>4) Dasselbige bey den Folgerungen und Schlüssen 481</p>
+         <p><br>II.</p>
+         <p><br>Von der subjektivischen Nothwendigkeit der Denkarten,<br>in wie fern ihre Form nothwendig durch ihre Gründe<br>bestimmet wird. 482</p>
+         <p><br>1) Unterschied der nothwendigen und zufälligen Ur-<span class="hidden-word">1) Unterschied der nothwendigen und zufälligen Urtheile,</span><br>theile, die es der Form nach sind 483</p>
+         <p><br>2) Allgemeiner Charakter der zufälligen Urtheile 486</p>
+         <p><br>3) Zu den subjektivisch nothwendigen Urtheilen ge-<span class="hidden-word">3) Zu den subjektivisch nothwendigen Urtheilen gehören</span><br>hören die Verhältnißgedanken, die aus der Ver-<span class="hidden-word">3) Zu den subjektivisch nothwendigen Urtheilen gegleichung</span><br>gleichung der Dinge entspringen 486</p>
+         <p><br>4) Ob alle nothwendigen Urtheile zu dieser Gattung<br>gehören? Ob alle Wahrheiten nur Eine Wahrheit<br>sind? 487</p>
+         <p><br>5) Die Urtheile des unmittelbaren Bewußtseyns sind<br>subjektivisch nothwendige Urtheile 491</p>
+         <p><br>6) Die Schlußurtheile sind subjektivisch nothwendige<br>Urtheile, wenn die Grundurtheile vorausgesetzet<br>werden. Gränze des vernünftelnden Skepticismus 492</p>
+         <p><br>7) Von der Nothwendigkeit in unsern Urtheilen über<br>die verursachende Verbindung 494</p>
+         <p><br>Erster Fall, wo diese subjektivische Nothwendigkeit nur<br>eine bedingte Nothwendigkeit ist 496</p>
+         <p><br>8) In welchen Fällen sie eine innere absolute Noth-<span class="hidden-word">8) In welchen Fällen sie eine innere absolute Nothwendigkeit</span><br>wendigkeit ist 497</p>
+         <p><br></p>
+         <div class="page" data-page="12"></div>
+         <p></p>
+         <p><br><br>des ersten Bandes [XLIX]</p>
+         <p><br>9) Wie weit das allgemeine Princip: Nichts wird<br>ohne Ursache, ein subjektivisch nothwendiger<br>Grundsatz sey? S. 501</p>
+         <p><br>10) Von der subjektivischen Nothwendigkeit in andern<br>allgemeinen Denkarten. Von Suggestionssatzen 507</p>
+         <p><br>11) Nochmalige Aufzählung der subjektivisch noth-<span class="hidden-word">11) Nochmalige Aufzählung der subjektivisch nothwendigen</span><br>wendigen Denkarten und Grundsätze 512</p>
+         <p><br>12) Von der subjektivischen Nothwendigkeit gewisser<br>Denkarten, die eine hypothetische Gewohnheits-<br>nothwendigkeit ist. 516</p>
+         <p><br>III.</p>
+         <p><br>Von der subjektivischen Nothwendigkeit in den Denk-<span class="hidden-word">Von der subjektivischen Nothwendigkeit in den Denkarten</span><br>arten des gemeinen Verstandes.<span class="hidden-word">Von der subjektivischen Nothwendigkeit in den Denk1)</span><br>1) Worinnen Kenntnisse des gemeinen Verstandes<span class="hidden-word">Von der subjektivischen Nothwendigkeit in den Denkbestehen?</span><br>bestehen? 519</p>
+         <p><br>2) Wie die verschiedenen Arten der subjektivischen<br>Nothwendigkeit bey ihnen zu unterscheiden sind 526</p>
+         <p><br>IV.</p>
+         <p><br>Von der objektivischen Wahrheit, und von objektivisch<br>nothwendigen Wahrheiten 530</p>
+         <p><br>1) Worauf es bey der Wahrheit unserer Erkenntniß<br>von den Gegenständen ankomme. Die Vorstellun-<br>gen als Impreßionen von den Dingen sind nur sub-<br>jektivische Scheine 531</p>
+         <p><br>2) Was es eigentlich sagen wolle, die Objekte sind so,<br>wie wir sie uns vorstellen? 535</p>
+         <p><br>3) Die nothwendigen Denkgesetze unsers Verstandes<br>können von uns nicht für blos subjektivische Denk-<br>gesetze, die es nur vor uns sind, angesehen wer-<br>den. Die allgemeinen theoretischen Wahrheiten<br>sind nicht blos Relationes für uns 540</p>
+         <p><br>4) Ob unsere Kenntnisse von wirklichen Dingen blos<br>subjektivischer Schein sey? 546</p>
+         <p><br>5) In</p>
+         <p><br></p>
+         <div class="page" data-page="13"></div>
+         <p><br>[L] Inhalt</p>
+         <p><br>5) In wie fern wir Vorstellungen von äußern Ob-<span class="hidden-word">5) In wie fern wir Vorstellungen von äußern Objekten</span><br>jekten haben, die wir als Vorstellungen von den<span class="hidden-word">5) In wie fern wir Vorstellungen von äußern ObDingen</span><br>Dingen selbst, nicht bloß von gewissen Beschaffen-<span class="hidden-word">5) In wie fern wir Vorstellungen von äußern Obheiten</span><br>heiten und Seiten der Dinge, gebrauchen können? S. 548</p>
+         <p><br>6) Das Grundgesetz, wovon die Zuverläßigkeit und<br>Realität unserer Erkenntnisse abhängt 551</p>
+         <p><br>7) Erfordernisse bey unsern Impressionen, wenn die<br>Erkenntniß nicht bloß subjektivischer Schein seyn<br>soll 552</p>
+         <p><br>8) Fortsetzung des Vorhergehenden. Warum die<br>Schönheit mehr etwas blos Subjektivisches sey<br>als die Wahrheit 554</p>
+         <p><br>9) Fortsetzung der Betrachtung über die Erfordernisse<br>bey unsern Impressionen, wenn die Erkenntniß ob-<br>jektivisch seyn soll 559</p>
+         <p><br>10) Gang der gesunden Vernunft, wenn sie ihre Kennt-<span class="hidden-word">10) Gang der gesunden Vernunft, wenn sie ihre Kenntnisse</span><br>nisse für mehr als bloßen Schein ansieht. Beweis,<span class="hidden-word">10) Gang der gesunden Vernunft, wenn sie ihre Kenntdaß</span><br>daß etwas Objektivisches in unserer Erkenntniß von<span class="hidden-word">10) Gang der gesunden Vernunft, wenn sie ihre Kenntwirklichen</span><br>wirklichen Dingen enthalten sey 560</p>
+         <p><br>11) Worauf die Unterscheidung zwischen nothwendigen<br>und zufälligen Wahrheiten beruhe 564</p>
+         <p><br>12) Das subjektivische Gesetz des zufälligen Bey-<span class="hidden-word">12) Das subjektivische Gesetz des zufälligen Beyfalls,</span><br>falls, und das Gesetz, nach welchem etwas objekti-<span class="hidden-word">12) Das subjektivische Gesetz des zufälligen Beyvisch</span><br>visch für zufällig erkannt wird 568</p>
+         <p><br>Achter Versuch.</p>
+         <p><br>Von der Beziehung der höhern Kenntnisse der<br>raisonnirenden Vernunft zu den Kenntnissen<br>des gemeinen Menschenverstandes.</p>
+         <p><br>I.</p>
+         <p><br>Was höhere Kenntnisse der raisonnirenden Vernunft sind?<br>Von der Natur der allgemeinen Theorien 570</p>
+         <p><br>II.</p>
+         <p><br>In den absolut nothwendigen Denkarten können sich</p>
+         <p><br></p>
+         <div class="page" data-page="14"></div>
+         <p></p>
+         <p><br>des ersten Bandes. [LI]</p>
+         <p><br>der gemeine Verstand und die Vernunft nicht wider-<span class="hidden-word">der gemeine Verstand und die Vernunft nicht widersprechen</span><br>sprechen S. 575</p>
+         <p><br>III.</p>
+         <p><br>Auf welche Art die Vernunft und der gemeine Verstand<br>sich einander widersprechen können? Wie sie sich von<br>selbst vereinigen, und sich wechselseitig einander be-<br>richtigen 576</p>
+         <p><br>IV.</p>
+         <p><br>Wie überhaupt in allen Fällen bey einer wahren Dis-<span class="hidden-word">Wie überhaupt in allen Fällen bey einer wahren Disharmonie</span><br>harmonie der höhern Vernunft, und des gemeinen<span class="hidden-word">Wie überhaupt in allen Fällen bey einer wahren DisMenschenverstandes</span><br>Menschenverstandes zu verfahren sey? 584</p>
+         <p><br>V.</p>
+         <p><br>Vergleichung der entwickelten höhern Kenntnisse des<br>Verstandes mit den unentwickelten sinnlichen Kennt-<br>nissen, in Hinsicht der Seelenvermögen, welche da-<br>bey wirksam sind 587</p>
+         <p><br>Neunter Versuch.</p>
+         <p><br>Ueber das Grundprincip des Empfindens, des<br>Vorstellens und des Denkens.</p>
+         <p><br>I.</p>
+         <p><br>Bestimmung des zu untersuchenden Punkts 590<br>II.</p>
+         <p><br>Das Princip des Fühlens fällt mit dem Princip des Den-<span class="hidden-word">Das Princip des Fühlens fällt mit dem Princip des Denkens</span><br>kens an Einer Seite zusammen 592</p>
+         <p><br>III.</p>
+         <p><br>Das Beziehen der Vorstellungen auf einander, welches<br>zum Denken erfodert wird, ist eine Aeußerung der vor-<br>stellenden Kraft 594</p>
+         <p><br>IV.</p>
+         <p><br>Andere Gründe für die Meynung, daß die Denkkraft nur<br>in einem höhern Grade des Gefühls und der vor-<br>stellenden Kraft bestehe 598</p>
+         <p><br>V.</p>
+         <p><br>Erfahrungen, aus denen zu folgen scheint, daß die Aktus<br>der Denkkraft wesentlich von den Aeußerungen des</p>
+         <p><br>Gefühls</p>
+         <p><br></p>
+         <div class="page" data-page="15"></div>
+         <p><br>[LII] Inhalt</p>
+         <p><br>Gefühls und der vorstellenden Kraft unterschieden<br>sind.</p>
+         <p><br>1) Empfinden, Vorstellen und Denken scheinet sich<br>einander auszuschließen S. 599</p>
+         <p><br>2) Das Gefühl der Verhältnisse ist oft lebhaft, ohne<br>daß die Gewahrnehmung der Verhältnisse es auch<br>sey 601</p>
+         <p><br>3) Die Aeußerung der vorstellenden Kraft bey dem<br>Beziehen der Vorstellungen auf einander, scheinet<br>nicht allemal den zweeten Aktus des Denkens, nem-<br>lich das Gewahrnehmen des Verhältnisses in glei-<br>cher Maße mit sich verbunden zu haben 602</p>
+         <p><br>VI.</p>
+         <p><br>Das Resultat aus den vorhergehenden Erfahrungen ist<br>folgendes: „Das erste Stück des Denkaktus, das<br>„Beziehen der Vorstellungen auf einander, ist eine<br>„selbsithätige Wirkung der vorstellenden Kraft.<br>„Das zweyte Stück, das Gewahrnehmen der Be-<br>„ziehung, ist eine neue selbsithätige Aeußerung des<br>„Gefühls.‟</p>
+         <p><br>1) Vorstellung und Erläuterung dieser Idee 606</p>
+         <p><br>2) Ursprung des Empfindens, des Vorstellens und<br>des Denkens aus Einem Princip 611</p>
+         <p><br>3) Uebereinstimmung dieser Vorstellungen mit den Be-<span class="hidden-word">3) Uebereinstimmung dieser Vorstellungen mit den Beobachtungen</span><br>obachtungen 616</p>
+         <p><br>Zehnter Versuch.</p>
+         <p><br>Ueber die Beziehung der Vorstellungskraft auf<br>die übrigen thätigen Seelenvermögen.</p>
+         <p><br>I.</p>
+         <p><br>Von der Abtheilung der Grundvermögen der Seele.<br>1) Es ist zu vermuthen, daß die Auflösung aller übri-<br>gen Seelenäußerungen auf Eine und dieselbige<br>Grundkraft zurückführen werde, aus der die Ver-<br>standeswirkungen entstehen 618</p>
+         <p><br></p>
+         <div class="page" data-page="16"></div>
+         <p></p>
+         <p><br>des ersten Bandes. [LIII]</p>
+         <p><br>2) Von den verschiedenen Grundvermögen der Seele,<br>Gefühl, Verstand, Thätigkeitskraft oder Wille S. 619</p>
+         <p><br>II.</p>
+         <p><br>Von der Natur der Vorstellungen, die wir von unsern<br>Thätigkeiten haben.</p>
+         <p><br>1) Jede Aeußerung der thätigen Kraft ist vorher in-<span class="hidden-word">1) Jede Aeußerung der thätigen Kraft ist vorher instinktartig</span><br>stinktartig erfolget, ehe eine Vorstellung von ihr hat<span class="hidden-word">1) Jede Aeußerung der thätigen Kraft ist vorher ingemacht</span><br>gemacht werden können 627</p>
+         <p><br>2) Die instinktartigen Thätigkeiten sind Aeußerun-<span class="hidden-word">2) Die instinktartigen Thätigkeiten sind Aeußerungen</span><br>gen der thätigen Seelenkraft, die durch Empfin-<span class="hidden-word">2) Die instinktartigen Thätigkeiten sind Aeußerundungen</span><br>dungen gereizet und bestimmet ist 629</p>
+         <p><br>3) Entstehungsart der Vorstellungen, die wir uns<br>von unsern eignen Aktionen machen. Zuerst, was<br>zu einer vollständigen Empfindung einer Aktion<br>erfodert wird 637</p>
+         <p><br>4) Was in der Wiedervorstellung einer Aktion ent-<span class="hidden-word">4) Was in der Wiedervorstellung einer Aktion enthalten</span><br>halten sey. Die Vorstellung von einer Aktion ent-<span class="hidden-word">4) Was in der Wiedervorstellung einer Aktion enthält</span><br>hält einen Ansatz zu der Aktion selbst 641</p>
+         <p><br>III.</p>
+         <p><br>Auflösung einiger psychologischen Aufgaben aus der Na-<span class="hidden-word">Auflösung einiger psychologischen Aufgaben aus der Natur</span><br>tur unserer Vorstellungen von Aktionen.</p>
+         <p><br>1) Warum Leute von großer praktischer Fertigkeit in<br>einer Art von Handlungen weniger aufgelegt sind,<br>solche deutlich zu beschreiben, und warum umge-<br>kehrt die Geschicklichkeit zu dem letztern so oft von<br>der Ausübungsfertigkeit getrennet ist? 650</p>
+         <p><br>2) Was das Wesentliche in den Fertigkeiten sey? 653</p>
+         <p><br>3) Worinn das Nachahmungsvermögen bestehe? 664</p>
+         <p><br>4) Auf welche Art das Mitgefühl sich äußere? 677</p>
+         <p><br>5) Die Macht der Einbildungskraft auf den Körper<br>beruhet auf Vorstellungen von Handlungen. 684</p>
+         <p><br>IV.</p>
+         <p><br>Wie die vorstellende Kraft der Seele sich auf ihre Re-<span class="hidden-word">Wie die vorstellende Kraft der Seele sich auf ihre Receptivität</span><br>ceptivität und auf ihre thätige Krafr beziehe.</p>
+         <p><br>1) Das</p>
+         <p><br></p>
+         <div class="page" data-page="17"></div>
+         <p><br><br>[LIV] Inhalt</p>
+         <p><br>1) Das Vermögen, Aktionen sich vorzustellen, bezieht<br>sich auf die thätige Kraft, welche die Aktionen her-<br>vorbringet, auf dieselbige Art, wie das Vermögen,<br>Empfindungen zu reproduciren, sich auf das Ver-<br>mögen beziehet, solche anzunehmen. Die vorstel-<br>lende Kraft ist eine höhere Stufe der innern Selbst-<br>thätigkeit 686</p>
+         <p><br>2) Ob alle Kraftäußerungen der Seele als eine Be-<span class="hidden-word">2) Ob alle Kraftäußerungen der Seele als eine Bearbeitung</span><br>arbeitung der Vorstellungen angesehen werden<span class="hidden-word">2) Ob alle Kraftäußerungen der Seele als eine Bekönnen?</span><br>können? Leibnitz-Wolfische Erklärung von den<span class="hidden-word">2) Ob alle Kraftäußerungen der Seele als eine BeWillensäußerungen</span><br>Willensäußerungen 691</p>
+         <p><br>V.</p>
+         <p><br>Von der Verschiedenheit der Empfindungen, in so ferne<br>sie mehr die eine, als die andere von den Grund-<br>vermögen der Seele zur Wirksamkeit reizen 703<br>1) Der Grund, warum gewisse Empfindungen mehr<br>die Empfindsamkeit erregen, andere mehr den<br>Verstand zum Denken, und andere mehr den<br>Willen zum Handeln bestimmen, liegt zum Theil in<br>einer gewissen Beschaffenheit der Empfindungen 704</p>
+         <p><br>2) Es können überhaupt nur solche Sachen besondere<br>Gegenstände des Gefühls seyn, von welchen die<br>Eindrücke besonders, und unvermischt mit den Ein-<br>drücken von andern der Seele zugeführet werden 707</p>
+         <p><br>3) Vielbefassende, lebhafte, starke und unauseinander-<span class="hidden-word">3) Vielbefassende, lebhafte, starke und unauseinandergesetzte</span><br>gesetzte Empfindungen sind die eigentlichen Gefühle,<span class="hidden-word">3) Vielbefassende, lebhafte, starke und unauseinanderwelche</span><br>welche rühren und bewegen. Allzu starke Ein-<span class="hidden-word">3) Vielbefassende, lebhafte, starke und unauseinanderdrücke</span><br>drücke betäuben 710</p>
+         <p><br>4) Gleichgültige Empfindungen reizen das Empfin-<span class="hidden-word">4) Gleichgültige Empfindungen reizen das Empfindungsvermögen,</span><br>dungsvermögen, als Sinn betrachtet, aus demsel-<span class="hidden-word">4) Gleichgültige Empfindungen reizen das Empfinbigen</span><br>bigen Grunde, aus dem sie auf die Vorstellungskraft<span class="hidden-word">4) Gleichgültige Empfindungen reizen das Empfinwirken</span><br>wirken 714</p>
+         <p><br>5) Gemäßigte und mehr auseinandergesetzte Em-<span class="hidden-word">5) Gemäßigte und mehr auseinandergesetzte Empfindungen</span><br>pfindungen reizen die vorstellende Kraft. Noch<span class="hidden-word">5) Gemäßigte und mehr auseinandergesetzte Emmehr</span><br>mehr auseinandergesetzte die Denkkraft 715</p>
+         <p><br></p>
+         <div class="page" data-page="18"></div>
+         <p></p>
+         <p><br>des ersten Bandes. [LV]</p>
+         <p><br>6) Die Gefühle reizen unmittelbar die Empfindsam-<span class="hidden-word">6) Die Gefühle reizen unmittelbar die Empfindsamkett,</span><br>kett, in so fern sie angenehm sind. S. 720</p>
+         <p><br>7) Unangenehme Gefühle reizen die Thätigkeitskraft.<br>Aber diese wird am meisten unterhalten durch Bedürf-<br>nisse, denen durch die thätigen Bestrebungen der Seele<br>abgeholfen werden kann, und durch Vorstellungen von<br>vorhergegangenen angenehmen Empfindungen 724</p>
+         <p><br>8) Folgerungen aus dem Vorhergehenden. Das Ver-<span class="hidden-word">8) Folgerungen aus dem Vorhergehenden. Das Verhältniß</span><br>hältniß in den entwickelten Grundvermögen der<span class="hidden-word">8) Folgerungen aus dem Vorhergehenden. Das VerSeele</span><br>Seele hängt zum Theil von der Art und Weise ab,<span class="hidden-word">8) Folgerungen aus dem Vorhergehenden. Das Verwomit</span><br>womit die Seele Veränderungen von außen an-<span class="hidden-word">8) Folgerungen aus dem Vorhergehenden. Das Vernimmt,</span><br>nimmt, und solche zu Empfindungen macht 727</p>
+         <p><br>Eilfter Versuch.</p>
+         <p><br>Ueber die Grundkraft der menschlichen Seele,<br>und den Charakter der Menschheit.</p>
+         <p><br>I.</p>
+         <p><br>Ob wir eine Idee von der Grundkraft der Seele haben<br>können, und welche?</p>
+         <p><br>1) Was eine solche Grundkraft seyn soll? 730</p>
+         <p><br>2) Ist eine Vorstellung von ihr möglich? 733</p>
+         <p><br>3) Ist das Gefühl die Grundkraft der Seele? 734</p>
+         <p><br>II.</p>
+         <p><br>Von dem Unterscheidungsmerkmal der menschlichen<br>Seele, und dem Charakter der Menschheit.<br>1) Wie fern es bey jedweder Hypothese über die Na-<br>tur der Seele dennoch einen Grundcharakter der<br>menschlichen Seele von andern Thierseelen geben<br>müsse 738</p>
+         <p><br>2) Die Eigenheiten der menschlichen Seele vor den<br>Seelen der Thiere 740</p>
+         <p><br>3) Ob der Grundcharakter der Menschheit in der Per-<span class="hidden-word">3) Ob der Grundcharakter der Menschheit in der Perfektibilität</span><br>fektibilität gesetzet werden könne? 742</p>
+         <p><br>4) Ob das Vermögen der Reflexion diesen Grund-<span class="hidden-word">4) Ob das Vermögen der Reflexion diesen Grundcharakter</span><br>charakter ausmache? 744</p>
+         <p><br></p>
+         <div class="page" data-page="19"></div>
+         <p></p>
+         <p><br>[LVI] Inhalt des ersten Bandes.</p>
+         <p><br>5) Prüfung der Herderischen Ideen. Ob das Ver-<span class="hidden-word">5) Prüfung der Herderischen Ideen. Ob das Verhältniß</span><br>hältniß der Extension zur Intension in der Natur-<span class="hidden-word">5) Prüfung der Herderischen Ideen. Ob das Verkraft</span><br>kraft für den Grundcharakter zu halten sey? S. 748</p>
+         <p><br>III.</p>
+         <p><br>Von der innern Selbsithätigkeit der menschlichen Seele.<br>1) Worinn diese Selbsithätigkeit zu setzen ist 752</p>
+         <p><br>2) Ein höherer Grad von ihr gehört zu den Eigenhei-<span class="hidden-word">2) Ein höherer Grad von ihr gehört zu den Eigenheiten</span><br>ten des Menschen 754</p>
+         <p><br>3) Wie ferne darinn der Grundcharakter der menschli-<span class="hidden-word">3) Wie ferne darinn der Grundcharakter der menschlichen</span><br>chen Seele liege? 758</p>
+         <p><br>4) Ob dieser Grundcharakter bestimmt sey? 761</p>
+         <p><br>Anhang zum eilften Versuch.</p>
+         <p><br>Einige Anmerkungen über die natürliche<br>Sprachfähigkeit des Menschen.</p>
+         <p><br>I.</p>
+         <p><br>Aus der natürlichen Vernunft- und Sprachfähigkeit des<br>Menschen kann nicht geschlossen werden, daß solche bey ihm<br>auch hinreiche, selbst sich eine Sprache zu erfinden 766</p>
+         <p><br>II.</p>
+         <p><br>Der Grund, warum vorzüglich die Töne zu Zeichen der<br>Sachen gebraucht worden sind, lieget nicht so wohl dar-<br>inn, daß der Sinn des Gehörs ein mittler Sinn ist,<br>als darinn, daß der Mensch die Eindrücke auf diesen Sinn<br>durch sein Stimmorgan wiederum andern eben so kann<br>empfinden lassen, als er sie selbst empfunden hat 770</p>
+         <p><br>III.</p>
+         <p><br>Es ist nicht erwiesen, weder, daß der Mensch von selbst keine<br>Sprache erfinden könne; noch daß er nothwendig von<br>selbst sie erfinden müsse. Es giebt einen Mittelweg<br>zwischen diesen beiden Meinungen 772</p>
+         <p><br>IV.</p>
+      </div>
+   </body>
+</html>
