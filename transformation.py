@@ -1,53 +1,42 @@
 import os
-import csv
-import requests
-import tempfile
 from saxonche import PySaxonProcessor
 
-
-CSV_PATH = "files.csv"                   # path to your csv
-XSLT_PATH = "transform.xsl"    # your stylesheet
+XSLT_PATH = "transform2.xsl"    # your stylesheet
 OUTPUT_DIR = "chapter_files"             # output directory
+INPURT_DIR = "input_files"              # input directory for XML files
 
-# ensure output directory exists
-os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 with PySaxonProcessor(license=False) as proc:
     xslt_proc = proc.new_xslt30_processor()
     stylesheet = xslt_proc.compile_stylesheet(stylesheet_file=XSLT_PATH)
 
-    with open(CSV_PATH, newline='', encoding="utf-8") as csvfile:
-        reader = csv.reader(csvfile)
-        next(reader)  # skip header: Title,URL
+    # List all XML files in the input directory
+    xml_files = [f for f in os.listdir(INPURT_DIR) if f.endswith('.xml')]
 
-        for row in reader:
+    for xml_file in xml_files:
+        label = os.path.splitext(xml_file)[0]  # Extract label from filename
+        print(f"Processing: {label}")
 
-            label, url = row[0].strip(), row[1].strip()
-            print(f"Processing: {label} | {url}")
+        # Read XML file from input_files
+        xml_file_path = os.path.join(INPURT_DIR, xml_file)
+        if not os.path.exists(xml_file_path):
+            print(f"Error: XML file {xml_file_path} does not exist.")
+            continue
 
-            # fetch TEI XML content from Mikes repo
-            response = requests.get(url)
-            response.raise_for_status()
-            xml_content = response.text
+        # transform
+        result = stylesheet.transform_to_string(source_file=xml_file_path)
 
-            # save to temporary XML file
-            with tempfile.NamedTemporaryFile("w", suffix=".xml", delete=False, encoding="utf-8") as tmp_file:
-                tmp_file.write(xml_content)
-                tmp_file_path = tmp_file.name
+        # generate safe output filename
+        safe_name = "".join(c for c in label if c.isalnum() or c in ('-', '_')).strip()
+        if not safe_name:
+            safe_name = "output"
+        output_file = os.path.join(OUTPUT_DIR, f"{safe_name}.html")
 
-            # transform
-            result = stylesheet.transform_to_string(source_file=tmp_file_path)
+        # write output
+        with open(output_file, "w", encoding="utf-8") as f:
+            f.write(result)
 
-            # generate safe output filename
-            safe_name = "".join(c for c in label if c.isalnum() or c in ('-', '_')).strip()
-            if not safe_name:
-                safe_name = "output"
-            output_file = os.path.join(OUTPUT_DIR, f"{safe_name}.html")
-
-            # write output
-            with open(output_file, "w", encoding="utf-8") as f:
-                f.write(result)
-
-            print(f" Saved → {output_file}")
+        print(f" Saved → {output_file}")
 
 print("\nAll transformations completed successfully!")
+
